@@ -14,6 +14,6 @@ class Solution:
 
         return (-1,-1)        
 
-
+# test
 test=Solution()
 test.twoSum(range(0,32046,2), 16021)                
