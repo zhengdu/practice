@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+<center>    
+    <title>{{ title }}</title>
+</center>    
+</head>
+<body>
+<div class="container">
+    <h1>{{ title }}</h1>     
+</div>
+
+<div class="container">
+<center>
+    {% for result in results %}
+    <h2>Queue Volume -- {{ result[0] }}</h2>
+     {{ result[1]['html'] }}
+     <img src="{{ result[1]['img'] }}" alt="{{ result[0] }}"   width="1200" height="300">
+    {% endfor %} 
+</center>     
+</div>
+<div class="container">
+    <p>Update at {{update_time}}</p>
+</div>
+</body>
+</html>
