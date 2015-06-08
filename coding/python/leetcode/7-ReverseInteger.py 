@@ -1,0 +1,12 @@
+class Solution:
+    # @param {integer} x
+    # @return {integer}
+    def reverse(self, x):
+    	s = str(x)
+    	if x < 0:
+    		return int(s[0]+ s[:0:-1])
+    	elif x >= 0:
+    	    return int(s[::-1])	
+
+a = Solution()
+print a.reverse(-1234)    		
